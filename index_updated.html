@@ -62,7 +62,7 @@ button:hover{background:#ffdc7d}
 <header>
   <h1>ลอยกระทง</h1>
   <p class="sub">เขียนคำอธิษฐาน แล้วปล่อยให้สายน้ำพาไป · แตะท้องฟ้าเพื่อจุดพลุ · แตะกระทงเพื่ออ่านคำอธิษฐาน</p>
-  <p class="credit">สร้างโดย Claude · Anthropic</p>
+  <p class="credit">สร้างโดย ฟรุ๊ตตี้ ธีรพัฒน์</p>
 </header>
 <div id="count" aria-live="off"></div>
 <form id="panel" autocomplete="off">
@@ -335,7 +335,7 @@ const COUNTER_KEY='loykrathong_total_local_v1';
 let totalFloated=0;
 try{totalFloated=Number(localStorage.getItem(COUNTER_KEY)||0)||0;}catch(e){}
 function updateCount(){
-  cnt.textContent='ลอยกระทงแล้ว '+totalFloated.toLocaleString('th-TH')+' ครั้ง';
+  cnt.textContent='มีคนมาลอยกระทงตรงนี้แล้ว '+totalFloated.toLocaleString('th-TH')+' ครั้ง';
 }
 cv.addEventListener('pointerdown',e=>{
   const o=pick(e.clientX,e.clientY);
